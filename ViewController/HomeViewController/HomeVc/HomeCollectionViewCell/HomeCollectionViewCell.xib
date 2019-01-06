@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="RvpMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeN-E7-ywX">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgA-js-kyy">
+                                <rect key="frame" x="8" y="5" width="119" height="20"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                                <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lgA-js-kyy" secondAttribute="trailing" constant="8" id="gE9-XI-Npx"/>
+                            <constraint firstAttribute="bottom" secondItem="lgA-js-kyy" secondAttribute="bottom" constant="5" id="gVS-Yx-HHJ"/>
+                            <constraint firstItem="lgA-js-kyy" firstAttribute="top" secondItem="YeN-E7-ywX" secondAttribute="top" constant="5" id="iuV-V2-N43"/>
+                            <constraint firstItem="lgA-js-kyy" firstAttribute="leading" secondItem="YeN-E7-ywX" secondAttribute="leading" constant="8" id="j0P-iQ-ddl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="YeN-E7-ywX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AJC-0k-twt"/>
+                <constraint firstItem="YeN-E7-ywX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WGm-HW-aIa"/>
+                <constraint firstAttribute="trailing" secondItem="YeN-E7-ywX" secondAttribute="trailing" id="Yha-qk-kq5"/>
+                <constraint firstAttribute="bottom" secondItem="YeN-E7-ywX" secondAttribute="bottom" id="fGI-kG-ba2"/>
+            </constraints>
+            <size key="customSize" width="135" height="50"/>
+            <connections>
+                <outlet property="lblName" destination="lgA-js-kyy" id="HC4-uJ-6jz"/>
+                <outlet property="viewCellBG" destination="YeN-E7-ywX" id="pdZ-15-La8"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="53"/>
+        </collectionViewCell>
+    </objects>
+</document>

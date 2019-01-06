@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Light.ttf">
+            <string>Quicksand-Light</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedicationForCell" rowHeight="59" id="KGk-i7-Jjw" customClass="MedicationForCell" customModule="RvpMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jbb-jt-lHs">
+                        <rect key="frame" x="10" y="10" width="300" height="37.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sign_SelectedRadio" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-j4-VGe">
+                                <rect key="frame" x="0.0" y="0.0" width="14" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="vBG-eH-ogR"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="H48-ue-Rnt">
+                                <rect key="frame" x="24" y="0.0" width="276" height="37.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETz-iw-JjY">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36m-xq-r4r">
+                                        <rect key="frame" x="0.0" y="22.5" width="276" height="15"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvb-IM-yjS">
+                        <rect key="frame" x="266" y="7" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="0MG-fB-nFl"/>
+                            <constraint firstAttribute="height" constant="44" id="n6N-7k-Slf"/>
+                        </constraints>
+                        <state key="normal" image="Order_Close"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZ5-62-IGb">
+                        <rect key="frame" x="0.0" y="57.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="e9H-Ws-4BJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qvb-IM-yjS" secondAttribute="trailing" constant="10" id="Hea-gn-cKs"/>
+                    <constraint firstAttribute="trailing" secondItem="jbb-jt-lHs" secondAttribute="trailing" constant="10" id="LRz-81-uGq"/>
+                    <constraint firstItem="jbb-jt-lHs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="M5d-Jd-rlZ"/>
+                    <constraint firstItem="Qvb-IM-yjS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PAh-dL-Iqz"/>
+                    <constraint firstItem="OZ5-62-IGb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QL6-vF-a0b"/>
+                    <constraint firstItem="jbb-jt-lHs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="es1-kQ-HrG"/>
+                    <constraint firstAttribute="trailing" secondItem="OZ5-62-IGb" secondAttribute="trailing" id="fkC-nj-8nW"/>
+                    <constraint firstItem="OZ5-62-IGb" firstAttribute="top" secondItem="jbb-jt-lHs" secondAttribute="bottom" constant="10" id="i1D-hi-4ep"/>
+                    <constraint firstItem="jbb-jt-lHs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jD4-oX-nbW"/>
+                    <constraint firstAttribute="bottom" secondItem="OZ5-62-IGb" secondAttribute="bottom" id="oIz-ZF-eXf"/>
+                    <constraint firstItem="jbb-jt-lHs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qEf-fj-vZB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDelete" destination="Qvb-IM-yjS" id="iVG-qS-kkT"/>
+                <outlet property="imgRadio" destination="Udw-j4-VGe" id="mIF-Ri-6xe"/>
+                <outlet property="lblName" destination="ETz-iw-JjY" id="QfL-QS-JhC"/>
+                <outlet property="lblRelation" destination="36m-xq-r4r" id="B7i-fo-GrJ"/>
+                <outlet property="viewLine" destination="OZ5-62-IGb" id="oiz-rq-bg3"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Order_Close" width="10" height="10"/>
+        <image name="Sign_SelectedRadio" width="14" height="14"/>
+    </resources>
+</document>

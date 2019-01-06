@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="RvpMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSingIn" destination="bqH-ik-Ovg" id="obQ-sg-fZE"/>
+                <outlet property="btnSingUp" destination="U1k-If-FSs" id="O66-Fg-jIK"/>
+                <outlet property="imgBG" destination="R6a-If-t2N" id="y9Y-ob-epi"/>
+                <outlet property="imgRedSearch" destination="lUU-L9-isg" id="w5w-N6-HM7"/>
+                <outlet property="imgSearch" destination="IiK-CC-s1U" id="Xyj-Tk-z40"/>
+                <outlet property="imgTopLogo" destination="P7P-uW-aRx" id="4eG-4E-MaX"/>
+                <outlet property="lblExistingUser" destination="C3a-9B-dsf" id="rHm-ZB-Hks"/>
+                <outlet property="lblNewUser" destination="d79-SG-dBz" id="6TB-3p-dvy"/>
+                <outlet property="lblNewUserTopConstraint" destination="pzg-y6-Muc" id="hZy-0I-4h1"/>
+                <outlet property="lblRedSearchMeds" destination="vXR-2n-apA" id="X5l-n5-0JC"/>
+                <outlet property="lblSearchMedication" destination="Lxv-e7-ACi" id="rXx-Fb-g8Q"/>
+                <outlet property="lblThanks" destination="d57-2P-6xz" id="tfM-rR-TuE"/>
+                <outlet property="lblWelCome" destination="JlG-8w-l2H" id="TbA-ai-B24"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewRedSearch" destination="p51-Wq-hcq" id="FOS-yV-AOF"/>
+                <outlet property="viewThanks" destination="K2t-0v-zCf" id="LNI-uf-BQ1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2t-0v-zCf" userLabel="View - Thanks">
+                    <rect key="frame" x="0.0" y="20.000000000000004" width="414" height="55.333333333333343"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for choosing us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d57-2P-6xz">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.333333333333336"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="d57-2P-6xz" secondAttribute="trailing" id="7dK-FN-wPR"/>
+                        <constraint firstAttribute="bottom" secondItem="d57-2P-6xz" secondAttribute="bottom" id="9LS-aM-EIE"/>
+                        <constraint firstItem="d57-2P-6xz" firstAttribute="top" secondItem="K2t-0v-zCf" secondAttribute="top" id="HtS-4G-zIe"/>
+                        <constraint firstItem="d57-2P-6xz" firstAttribute="leading" secondItem="K2t-0v-zCf" secondAttribute="leading" id="etO-86-s2i"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlG-8w-l2H">
+                    <rect key="frame" x="0.0" y="75.333333333333329" width="414" height="54.999999999999986"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_Medicine_BG" translatesAutoresizingMaskIntoConstraints="NO" id="R6a-If-t2N">
+                    <rect key="frame" x="0.0" y="130.33333333333331" width="414" height="550.33333333333348"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMF-gx-jbw" userLabel="View - Top Logo">
+                    <rect key="frame" x="0.0" y="130.33333333333334" width="414" height="55.333333333333343"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_RxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="P7P-uW-aRx">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.333333333333336"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="P7P-uW-aRx" secondAttribute="bottom" id="CM9-XB-clb"/>
+                        <constraint firstAttribute="trailing" secondItem="P7P-uW-aRx" secondAttribute="trailing" id="LCk-pl-pWP"/>
+                        <constraint firstItem="P7P-uW-aRx" firstAttribute="leading" secondItem="XMF-gx-jbw" secondAttribute="leading" id="bvf-to-Vkh"/>
+                        <constraint firstItem="P7P-uW-aRx" firstAttribute="top" secondItem="XMF-gx-jbw" secondAttribute="top" id="tgO-v1-vT9"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vr3-nz-pmU">
+                    <rect key="frame" x="0.0" y="215.66666666666663" width="414" height="194.33333333333337"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_Search" translatesAutoresizingMaskIntoConstraints="NO" id="IiK-CC-s1U">
+                            <rect key="frame" x="185" y="0.0" width="44" height="89"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKR-cx-ljo">
+                            <rect key="frame" x="0.0" y="99.000000000000028" width="414" height="95.333333333333343"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search your medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxv-e7-ACi">
+                                    <rect key="frame" x="106.00000000000001" y="0.0" width="202.33333333333337" height="27"/>
+                                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="18"/>
+                                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-CI-LJg">
+                                    <rect key="frame" x="187.66666666666666" y="42.333333333333314" width="39" height="53"/>
+                                    <color key="pageIndicatorTintColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="currentPageIndicatorTintColor" red="0.74509803919999995" green="0.1960784314" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </pageControl>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="MKR-cx-ljo" firstAttribute="leading" secondItem="vr3-nz-pmU" secondAttribute="leading" id="Rhj-Ud-Upl"/>
+                        <constraint firstAttribute="trailing" secondItem="MKR-cx-ljo" secondAttribute="trailing" id="Rti-m7-XaH"/>
+                        <constraint firstAttribute="bottom" secondItem="MKR-cx-ljo" secondAttribute="bottom" id="f8Y-2H-lsT"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p51-Wq-hcq" userLabel="View - Search Meds">
+                    <rect key="frame" x="113.33333333333333" y="440" width="186.33333333333337" height="47"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_Red_Search" translatesAutoresizingMaskIntoConstraints="NO" id="lUU-L9-isg">
+                            <rect key="frame" x="2" y="6.6666666666666856" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="34" id="Uir-sK-KBZ"/>
+                                <constraint firstAttribute="height" constant="34" id="WXA-lw-WQ9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH MEDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXR-2n-apA">
+                            <rect key="frame" x="36.000000000000014" y="0.0" width="145.33333333333337" height="47"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
+                            <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8km-Zb-V8N">
+                            <rect key="frame" x="0.0" y="0.0" width="186.33333333333334" height="47"/>
+                            <connections>
+                                <action selector="searchMedsBtnAction:" destination="-1" eventType="touchUpInside" id="oiz-Wm-T7w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lUU-L9-isg" firstAttribute="centerY" secondItem="p51-Wq-hcq" secondAttribute="centerY" id="7LB-H8-GrK"/>
+                        <constraint firstItem="vXR-2n-apA" firstAttribute="leading" secondItem="lUU-L9-isg" secondAttribute="trailing" id="8rg-6s-g24"/>
+                        <constraint firstAttribute="trailing" secondItem="8km-Zb-V8N" secondAttribute="trailing" id="FfU-9J-kuI"/>
+                        <constraint firstItem="vXR-2n-apA" firstAttribute="top" secondItem="p51-Wq-hcq" secondAttribute="top" id="Frr-8f-xgP"/>
+                        <constraint firstAttribute="bottom" secondItem="vXR-2n-apA" secondAttribute="bottom" id="Lnk-au-J5C"/>
+                        <constraint firstAttribute="trailing" secondItem="vXR-2n-apA" secondAttribute="trailing" constant="5" id="Pda-gB-HmX"/>
+                        <constraint firstItem="8km-Zb-V8N" firstAttribute="top" secondItem="p51-Wq-hcq" secondAttribute="top" id="k2s-8v-Uzp"/>
+                        <constraint firstAttribute="bottom" secondItem="8km-Zb-V8N" secondAttribute="bottom" id="nPh-zr-Npx"/>
+                        <constraint firstItem="lUU-L9-isg" firstAttribute="leading" secondItem="p51-Wq-hcq" secondAttribute="leading" constant="2" id="pC4-Tn-jBu"/>
+                        <constraint firstItem="8km-Zb-V8N" firstAttribute="leading" secondItem="p51-Wq-hcq" secondAttribute="leading" id="siT-E9-vSp"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New User ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d79-SG-dBz">
+                    <rect key="frame" x="0.0" y="517" width="414" height="33"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1k-If-FSs">
+                    <rect key="frame" x="40" y="558" width="334" height="55.666666666666629"/>
+                    <color key="backgroundColor" red="0.73333333333333328" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                    <state key="normal" title="SIGN UP">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpBtnAction:" destination="-1" eventType="touchUpInside" id="2sB-fu-tfR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing User ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-9B-dsf">
+                    <rect key="frame" x="0.0" y="638.66666666666663" width="414" height="33"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXd-um-Gn8">
+                    <rect key="frame" x="0.0" y="679.66666666666663" width="414" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fBn-DO-0QJ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqH-ik-Ovg">
+                    <rect key="frame" x="0.0" y="680.66666666666663" width="414" height="55.333333333333371"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                    <state key="normal" title="SIGN IN">
+                        <color key="titleColor" red="0.74509803919999995" green="0.1960784314" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="signInBtnAction:" destination="-1" eventType="touchUpInside" id="YCC-4N-M4C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bqH-ik-Ovg" secondAttribute="trailing" id="3Ge-T1-qIy"/>
+                <constraint firstItem="mXd-um-Gn8" firstAttribute="top" secondItem="C3a-9B-dsf" secondAttribute="bottom" constant="8" id="51D-6I-0Ad"/>
+                <constraint firstItem="vr3-nz-pmU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Fb-JA-Dem"/>
+                <constraint firstAttribute="trailing" secondItem="d79-SG-dBz" secondAttribute="trailing" id="7gn-5x-xIQ"/>
+                <constraint firstItem="R6a-If-t2N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Jv-P3-3kq"/>
+                <constraint firstAttribute="trailing" secondItem="mXd-um-Gn8" secondAttribute="trailing" id="8ux-fr-YFk"/>
+                <constraint firstItem="XMF-gx-jbw" firstAttribute="height" secondItem="K2t-0v-zCf" secondAttribute="height" id="9Ix-lw-C9c"/>
+                <constraint firstItem="K2t-0v-zCf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="9xB-At-oVk"/>
+                <constraint firstAttribute="trailing" secondItem="vr3-nz-pmU" secondAttribute="trailing" id="AwW-9U-hvq"/>
+                <constraint firstItem="mXd-um-Gn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cr6-X5-cMS"/>
+                <constraint firstItem="bqH-ik-Ovg" firstAttribute="top" secondItem="R6a-If-t2N" secondAttribute="bottom" id="Cz6-9r-2zj"/>
+                <constraint firstItem="XMF-gx-jbw" firstAttribute="top" secondItem="JlG-8w-l2H" secondAttribute="bottom" id="D5t-zJ-mcs"/>
+                <constraint firstItem="vr3-nz-pmU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E1g-xo-n0g"/>
+                <constraint firstAttribute="trailing" secondItem="XMF-gx-jbw" secondAttribute="trailing" id="EbN-H9-Zad"/>
+                <constraint firstItem="p51-Wq-hcq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.45" id="G0s-5h-YTL"/>
+                <constraint firstItem="p51-Wq-hcq" firstAttribute="height" secondItem="K2t-0v-zCf" secondAttribute="height" multiplier="0.85" id="J1o-Nh-l0B"/>
+                <constraint firstItem="p51-Wq-hcq" firstAttribute="top" secondItem="vr3-nz-pmU" secondAttribute="bottom" constant="30" id="KCZ-QG-ijo"/>
+                <constraint firstItem="d79-SG-dBz" firstAttribute="height" secondItem="C3a-9B-dsf" secondAttribute="height" id="MWw-oV-wcU"/>
+                <constraint firstItem="R6a-If-t2N" firstAttribute="top" secondItem="JlG-8w-l2H" secondAttribute="bottom" id="Mdg-Vn-a81"/>
+                <constraint firstItem="U1k-If-FSs" firstAttribute="top" secondItem="d79-SG-dBz" secondAttribute="bottom" constant="8" id="QuZ-GH-ldS"/>
+                <constraint firstAttribute="trailing" secondItem="C3a-9B-dsf" secondAttribute="trailing" id="XBB-7f-b7k"/>
+                <constraint firstAttribute="trailing" secondItem="U1k-If-FSs" secondAttribute="trailing" constant="40" id="YRY-89-aH4"/>
+                <constraint firstItem="d79-SG-dBz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z79-Rp-8K3"/>
+                <constraint firstAttribute="trailing" secondItem="JlG-8w-l2H" secondAttribute="trailing" id="aBY-oU-k39"/>
+                <constraint firstAttribute="trailing" secondItem="R6a-If-t2N" secondAttribute="trailing" id="aM3-aJ-tLE"/>
+                <constraint firstItem="U1k-If-FSs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="cf3-lZ-VQx"/>
+                <constraint firstItem="p51-Wq-hcq" firstAttribute="centerX" secondItem="K2t-0v-zCf" secondAttribute="centerX" id="eto-B4-Ibe"/>
+                <constraint firstAttribute="bottom" secondItem="bqH-ik-Ovg" secondAttribute="bottom" id="fLV-uy-Wfd"/>
+                <constraint firstItem="K2t-0v-zCf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fyj-gh-g2e"/>
+                <constraint firstItem="XMF-gx-jbw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gOv-aG-clC"/>
+                <constraint firstItem="bqH-ik-Ovg" firstAttribute="top" secondItem="mXd-um-Gn8" secondAttribute="bottom" id="gVT-98-V0Y"/>
+                <constraint firstItem="C3a-9B-dsf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.045" id="h1V-W0-3Zh"/>
+                <constraint firstItem="JlG-8w-l2H" firstAttribute="height" secondItem="K2t-0v-zCf" secondAttribute="height" id="i2F-9T-Cdr"/>
+                <constraint firstItem="bqH-ik-Ovg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jcW-SD-f2C"/>
+                <constraint firstItem="C3a-9B-dsf" firstAttribute="top" secondItem="U1k-If-FSs" secondAttribute="bottom" constant="25" id="kve-5k-y5P"/>
+                <constraint firstItem="JlG-8w-l2H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oDv-2Y-arj"/>
+                <constraint firstAttribute="trailing" secondItem="K2t-0v-zCf" secondAttribute="trailing" id="ook-jQ-qe9"/>
+                <constraint firstItem="C3a-9B-dsf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oxB-30-IJb"/>
+                <constraint firstItem="d79-SG-dBz" firstAttribute="top" secondItem="p51-Wq-hcq" secondAttribute="bottom" constant="30" id="pzg-y6-Muc"/>
+                <constraint firstItem="K2t-0v-zCf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.075" id="wSV-bG-ml6"/>
+                <constraint firstItem="JlG-8w-l2H" firstAttribute="top" secondItem="K2t-0v-zCf" secondAttribute="bottom" id="wth-D4-v1L"/>
+                <constraint firstItem="bqH-ik-Ovg" firstAttribute="height" secondItem="K2t-0v-zCf" secondAttribute="height" id="xEg-Na-lsQ"/>
+                <constraint firstItem="vr3-nz-pmU" firstAttribute="top" secondItem="XMF-gx-jbw" secondAttribute="bottom" constant="30" id="yS3-iN-NZC"/>
+                <constraint firstItem="U1k-If-FSs" firstAttribute="height" secondItem="K2t-0v-zCf" secondAttribute="height" id="z8v-KD-Nxj"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcome_Medicine_BG" width="360" height="378"/>
+        <image name="welcome_Red_Search" width="34" height="34"/>
+        <image name="welcome_RxLogo" width="360" height="69"/>
+        <image name="welcome_Search" width="44" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupIdSignUpViewController" customModule="RvpMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="Pzb-87-V0C" id="Nwi-yL-8J2"/>
+                <outlet property="btnSignIn" destination="MEA-Rz-KUd" id="hTW-Xe-Mzb"/>
+                <outlet property="lblGroupId" destination="ZCT-Kp-ot7" id="kPz-zl-V73"/>
+                <outlet property="lblMemberGroupIdTitle" destination="s98-iY-4XK" id="WIW-IC-vkg"/>
+                <outlet property="lblMemberId" destination="mqd-FP-tgu" id="oGl-L7-aEV"/>
+                <outlet property="txtGroupId" destination="hPU-gJ-ddP" id="tZn-Bj-tgP"/>
+                <outlet property="txtMemeberId" destination="jtV-4M-dxp" id="zFs-4x-6tP"/>
+                <outlet property="view" destination="H72-2e-weX" id="pt0-kr-7Vm"/>
+                <outlet property="viewBecomeHeightConstraint" destination="bHi-3Y-zy0" id="web-2e-IFw"/>
+                <outlet property="viewBecomeMain" destination="H72-2e-weX" id="hQj-oS-Jv0"/>
+                <outlet property="viewBecomeMember" destination="fQa-j7-7D4" id="n10-ZZ-F8O"/>
+                <outlet property="viewGroupId" destination="ZPh-Pt-rjx" id="iWA-R1-OeJ"/>
+                <outlet property="viewMemberGroupIdTitle" destination="hbJ-SS-lg4" id="i8p-t6-tib"/>
+                <outlet property="viewMemberId" destination="ZhC-qE-oMl" id="FVS-Zz-iph"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H72-2e-weX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQa-j7-7D4">
+                    <rect key="frame" x="20" y="214" width="335" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbJ-SS-lg4" userLabel="View - Title">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member / Group ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s98-iY-4XK">
+                                    <rect key="frame" x="0.0" y="5" width="335" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="euq-KN-oSP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="s98-iY-4XK" secondAttribute="trailing" id="bkd-DN-hM5"/>
+                                <constraint firstItem="s98-iY-4XK" firstAttribute="centerY" secondItem="hbJ-SS-lg4" secondAttribute="centerY" id="ehB-hJ-Phg"/>
+                                <constraint firstAttribute="height" constant="30" id="mZQ-nW-Ucr"/>
+                                <constraint firstItem="s98-iY-4XK" firstAttribute="leading" secondItem="hbJ-SS-lg4" secondAttribute="leading" id="pes-Rr-HNs"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqd-FP-tgu">
+                            <rect key="frame" x="20" y="38" width="295" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhC-qE-oMl" userLabel="View - Member Id">
+                            <rect key="frame" x="20" y="56" width="295" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Member ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtV-4M-dxp">
+                                    <rect key="frame" x="15" y="0.0" width="265" height="40"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="jtV-4M-dxp" firstAttribute="top" secondItem="ZhC-qE-oMl" secondAttribute="top" id="6am-An-VgQ"/>
+                                <constraint firstItem="jtV-4M-dxp" firstAttribute="leading" secondItem="ZhC-qE-oMl" secondAttribute="leading" constant="15" id="QwD-ag-gDR"/>
+                                <constraint firstAttribute="trailing" secondItem="jtV-4M-dxp" secondAttribute="trailing" constant="15" id="cOm-WO-FwT"/>
+                                <constraint firstAttribute="bottom" secondItem="jtV-4M-dxp" secondAttribute="bottom" id="wXu-s4-bD5"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-Kp-ot7">
+                            <rect key="frame" x="20" y="104" width="295" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPh-Pt-rjx" userLabel="View - Group Id">
+                            <rect key="frame" x="20" y="122" width="295" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPU-gJ-ddP">
+                                    <rect key="frame" x="15" y="0.0" width="265" height="40"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="hPU-gJ-ddP" firstAttribute="top" secondItem="ZPh-Pt-rjx" secondAttribute="top" id="Rex-vM-IxU"/>
+                                <constraint firstItem="hPU-gJ-ddP" firstAttribute="leading" secondItem="ZPh-Pt-rjx" secondAttribute="leading" constant="15" id="X00-OE-E3c"/>
+                                <constraint firstAttribute="trailing" secondItem="hPU-gJ-ddP" secondAttribute="trailing" constant="15" id="ZWY-0F-cvG"/>
+                                <constraint firstAttribute="bottom" secondItem="hPU-gJ-ddP" secondAttribute="bottom" id="fUf-M1-VKT"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-87-V0C">
+                            <rect key="frame" x="20" y="185" width="140" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="hup-YH-jkW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnAction:" destination="-1" eventType="touchUpInside" id="i0c-3f-bBn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEA-Rz-KUd">
+                            <rect key="frame" x="175" y="185" width="140" height="40"/>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                            <state key="normal" title="SIGN IN">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="signInBtnAction:" destination="-1" eventType="touchUpInside" id="70o-0Z-iLA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hbJ-SS-lg4" secondAttribute="trailing" id="1L1-pa-14K"/>
+                        <constraint firstItem="ZCT-Kp-ot7" firstAttribute="trailing" secondItem="mqd-FP-tgu" secondAttribute="trailing" id="2dZ-BN-sNE"/>
+                        <constraint firstItem="ZhC-qE-oMl" firstAttribute="top" secondItem="mqd-FP-tgu" secondAttribute="bottom" constant="3" id="2gm-RY-8QH"/>
+                        <constraint firstItem="ZCT-Kp-ot7" firstAttribute="top" secondItem="ZhC-qE-oMl" secondAttribute="bottom" constant="8" id="7ki-Tu-Cai"/>
+                        <constraint firstItem="MEA-Rz-KUd" firstAttribute="height" secondItem="Pzb-87-V0C" secondAttribute="height" id="EGl-bH-4Bq"/>
+                        <constraint firstItem="MEA-Rz-KUd" firstAttribute="leading" secondItem="Pzb-87-V0C" secondAttribute="trailing" constant="15" id="GSr-F8-DTy"/>
+                        <constraint firstItem="ZPh-Pt-rjx" firstAttribute="top" secondItem="ZCT-Kp-ot7" secondAttribute="bottom" constant="3" id="Ihb-OZ-Zt9"/>
+                        <constraint firstItem="ZCT-Kp-ot7" firstAttribute="leading" secondItem="mqd-FP-tgu" secondAttribute="leading" id="KR9-5H-N90"/>
+                        <constraint firstItem="ZPh-Pt-rjx" firstAttribute="trailing" secondItem="ZCT-Kp-ot7" secondAttribute="trailing" id="M7p-Rn-Nda"/>
+                        <constraint firstItem="mqd-FP-tgu" firstAttribute="top" secondItem="hbJ-SS-lg4" secondAttribute="bottom" constant="8" id="MBm-Rc-oBJ"/>
+                        <constraint firstItem="hbJ-SS-lg4" firstAttribute="leading" secondItem="fQa-j7-7D4" secondAttribute="leading" id="Mng-aC-b77"/>
+                        <constraint firstItem="ZhC-qE-oMl" firstAttribute="leading" secondItem="mqd-FP-tgu" secondAttribute="leading" id="Osi-Wq-TUg"/>
+                        <constraint firstItem="ZPh-Pt-rjx" firstAttribute="height" secondItem="ZhC-qE-oMl" secondAttribute="height" id="SrV-sB-iHf"/>
+                        <constraint firstItem="Pzb-87-V0C" firstAttribute="leading" secondItem="mqd-FP-tgu" secondAttribute="leading" id="Uyf-MY-sBo"/>
+                        <constraint firstItem="MEA-Rz-KUd" firstAttribute="trailing" secondItem="mqd-FP-tgu" secondAttribute="trailing" id="VOT-mU-RIp"/>
+                        <constraint firstItem="mqd-FP-tgu" firstAttribute="leading" secondItem="fQa-j7-7D4" secondAttribute="leading" constant="20" id="bB9-Y9-AOa"/>
+                        <constraint firstAttribute="height" constant="240" id="bHi-3Y-zy0"/>
+                        <constraint firstItem="ZPh-Pt-rjx" firstAttribute="leading" secondItem="ZCT-Kp-ot7" secondAttribute="leading" id="fgH-Ox-3ch"/>
+                        <constraint firstAttribute="bottom" secondItem="Pzb-87-V0C" secondAttribute="bottom" constant="15" id="hHX-hI-K5g"/>
+                        <constraint firstItem="ZhC-qE-oMl" firstAttribute="trailing" secondItem="mqd-FP-tgu" secondAttribute="trailing" id="iZA-ug-2mw"/>
+                        <constraint firstItem="MEA-Rz-KUd" firstAttribute="width" secondItem="Pzb-87-V0C" secondAttribute="width" id="nYn-Fo-lDp"/>
+                        <constraint firstAttribute="trailing" secondItem="mqd-FP-tgu" secondAttribute="trailing" constant="20" id="qRW-Rt-oiY"/>
+                        <constraint firstItem="Pzb-87-V0C" firstAttribute="bottom" secondItem="MEA-Rz-KUd" secondAttribute="bottom" id="qkv-7S-ZBZ"/>
+                        <constraint firstItem="hbJ-SS-lg4" firstAttribute="top" secondItem="fQa-j7-7D4" secondAttribute="top" id="tKR-f1-loW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.403044181" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fQa-j7-7D4" firstAttribute="centerX" secondItem="H72-2e-weX" secondAttribute="centerX" id="PLi-BQ-GzK"/>
+                <constraint firstItem="fQa-j7-7D4" firstAttribute="leading" secondItem="H72-2e-weX" secondAttribute="leading" constant="20" id="RjZ-wm-RNj"/>
+                <constraint firstItem="fQa-j7-7D4" firstAttribute="centerY" secondItem="H72-2e-weX" secondAttribute="centerY" id="bR7-cn-ZcI"/>
+                <constraint firstItem="ZhC-qE-oMl" firstAttribute="height" secondItem="H72-2e-weX" secondAttribute="height" multiplier="0.06" id="hdv-xb-mj1"/>
+                <constraint firstAttribute="trailing" secondItem="fQa-j7-7D4" secondAttribute="trailing" constant="20" id="ssh-NP-S84"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="6.5" y="88.5"/>
+        </view>
+    </objects>
+</document>

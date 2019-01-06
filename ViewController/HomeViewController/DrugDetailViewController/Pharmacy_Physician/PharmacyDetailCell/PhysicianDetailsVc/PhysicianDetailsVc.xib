@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhysicianDetailsVc" customModule="RvpMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAddPhysician" destination="E4q-Mv-lIK" id="ueh-LP-xlX"/>
+                <outlet property="tblPhysician" destination="ceU-8b-Kit" id="B9N-pV-wf1"/>
+                <outlet property="view" destination="NPJ-RF-PgK" id="lOA-it-7zP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NPJ-RF-PgK">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPe-ZP-DBC">
+                    <rect key="frame" x="20" y="159" width="335" height="350"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-p8-imi" userLabel="View - Title">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physician Detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJt-GL-NWa">
+                                    <rect key="frame" x="0.0" y="7.5" width="335" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="9P5-dV-eDj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="yJt-GL-NWa" firstAttribute="leading" secondItem="hdY-p8-imi" secondAttribute="leading" id="Aoa-1A-eO2"/>
+                                <constraint firstAttribute="trailing" secondItem="yJt-GL-NWa" secondAttribute="trailing" id="IQY-fh-3zl"/>
+                                <constraint firstAttribute="height" constant="35" id="Kcq-4U-N2x"/>
+                                <constraint firstItem="yJt-GL-NWa" firstAttribute="centerY" secondItem="hdY-p8-imi" secondAttribute="centerY" id="Krx-Pw-ssO"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ceU-8b-Kit">
+                            <rect key="frame" x="8" y="43" width="319" height="262"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="tPN-gB-rpY"/>
+                                <outlet property="delegate" destination="-1" id="cYr-4V-rIU"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rl2-kv-AQ0" userLabel="View - Line">
+                            <rect key="frame" x="0.0" y="309" width="335" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="am8-dF-Frr"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4q-Mv-lIK">
+                            <rect key="frame" x="8" y="310" width="319" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="JII-sC-ctC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                            <state key="normal" title="Add New Physician">
+                                <color key="titleColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="AddNewPhysicianBtnAction:" destination="-1" eventType="touchUpInside" id="h6u-i0-SeE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rl2-kv-AQ0" secondAttribute="trailing" id="5fQ-8K-cPW"/>
+                        <constraint firstAttribute="height" constant="350" id="JWe-Hb-JOy"/>
+                        <constraint firstItem="hdY-p8-imi" firstAttribute="top" secondItem="nPe-ZP-DBC" secondAttribute="top" id="KQ7-yd-UGn"/>
+                        <constraint firstAttribute="trailing" secondItem="hdY-p8-imi" secondAttribute="trailing" id="Msg-VA-0Bo"/>
+                        <constraint firstItem="ceU-8b-Kit" firstAttribute="leading" secondItem="nPe-ZP-DBC" secondAttribute="leading" constant="8" id="NT8-QX-HB9"/>
+                        <constraint firstItem="rl2-kv-AQ0" firstAttribute="top" secondItem="ceU-8b-Kit" secondAttribute="bottom" constant="4" id="Z5M-6y-mAx"/>
+                        <constraint firstItem="ceU-8b-Kit" firstAttribute="top" secondItem="hdY-p8-imi" secondAttribute="bottom" constant="8" id="i1n-fW-3Xw"/>
+                        <constraint firstItem="E4q-Mv-lIK" firstAttribute="leading" secondItem="ceU-8b-Kit" secondAttribute="leading" id="mLY-xo-bo3"/>
+                        <constraint firstItem="hdY-p8-imi" firstAttribute="leading" secondItem="nPe-ZP-DBC" secondAttribute="leading" id="mTb-xU-hFh"/>
+                        <constraint firstAttribute="bottom" secondItem="E4q-Mv-lIK" secondAttribute="bottom" id="pQa-bD-ANc"/>
+                        <constraint firstItem="rl2-kv-AQ0" firstAttribute="leading" secondItem="nPe-ZP-DBC" secondAttribute="leading" id="pgF-Gk-LoV"/>
+                        <constraint firstItem="E4q-Mv-lIK" firstAttribute="trailing" secondItem="ceU-8b-Kit" secondAttribute="trailing" id="qjI-xw-HRq"/>
+                        <constraint firstItem="E4q-Mv-lIK" firstAttribute="top" secondItem="rl2-kv-AQ0" secondAttribute="bottom" id="xRv-j9-wvX"/>
+                        <constraint firstAttribute="trailing" secondItem="ceU-8b-Kit" secondAttribute="trailing" constant="8" id="z5n-2h-7gY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.403044181" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nPe-ZP-DBC" firstAttribute="centerX" secondItem="NPJ-RF-PgK" secondAttribute="centerX" id="5eG-31-Ziy"/>
+                <constraint firstAttribute="trailing" secondItem="nPe-ZP-DBC" secondAttribute="trailing" constant="20" id="XXI-kF-gBW"/>
+                <constraint firstItem="nPe-ZP-DBC" firstAttribute="centerY" secondItem="NPJ-RF-PgK" secondAttribute="centerY" id="pyQ-le-Avp"/>
+                <constraint firstItem="nPe-ZP-DBC" firstAttribute="leading" secondItem="NPJ-RF-PgK" secondAttribute="leading" constant="20" id="wNx-6m-44d"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="6.5" y="88.5"/>
+        </view>
+    </objects>
+</document>
